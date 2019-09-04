@@ -21,11 +21,15 @@ class Car:
     def initialize(self):
         if Car.speed is None or Car.steering is None:
             try:
-                from gpiozero import Servo
+                from gpiozero import LED
                 from aiy.pins import PIN_A
                 from aiy.pins import PIN_B
-                Car.speed = Servo(PIN_B)
-                Car.steering = Servo(PIN_A)
+                from aiy.pins import PIN_C
+                from aiy.pins import PIN_B
+                Car.speedA1 = LED(PIN_A)
+                Car.speedA2 = LED(PIN_B)
+                Car.speedB1 = LED(PIN_C)
+                Car.speedB2 = LED(PIN_D)
                 Car.connected = True
             except:
                 self.log('ERROR', 'Driving is not supported')
@@ -54,9 +58,10 @@ class Car:
             cls.timer_to_stop = None
 
         cls.log('INFO', 'Driving in direction "{}"'.format(direction))
-        cls.speed.value = cls.config[direction]['speed']
-        if direction != 'stop':
-            cls.steering.value = cls.config[direction]['steering']
+        cls.speedA1.value = cls.config[direction]['speedA1']
+        cls.speedA2.value = cls.config[direction]['speedA2']
+        cls.speedB1.value = cls.config[direction]['speedB1']
+        cls.speedB2.value = cls.config[direction]['speedB2']
 
     def drive(self, direction):
         if not self.initialize():
