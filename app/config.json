@@ -1,27 +1,27 @@
-{   "forward": {
+{   "back": {
         "speedA1": 1,
         "speedA2": 0,
         "speedB1": 1, 
         "speedB2": 0, 
-        "duration": 0.5},
+        "duration": 0.3},
     "left": {
         "speedA1": 0,
         "speedA2": 1,
         "speedB1": 1, 
         "speedB2": 0,
-        "duration": 0.5},
+        "duration": 0.1},
     "right": {
         "speedA1": 1,
         "speedA2": 0,
         "speedB1": 0, 
         "speedB2": 1,
-        "duration": 0.5},
-    "back": {
+        "duration": 0.1},
+    "forward": {
         "speedA1": 0,
         "speedA2": 1,
         "speedB1": 0, 
         "speedB2": 1,
-        "duration": 0.5},
+        "duration": 0.3},
     "stop": {
         "speedA1": 0,
         "speedA2": 0,
