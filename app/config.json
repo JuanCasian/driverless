@@ -1,22 +1,22 @@
-{   "back": {
+{   "forward": {
         "speedA1": 1,
         "speedA2": 0,
         "speedB1": 1, 
         "speedB2": 0, 
         "duration": 0.3},
-    "left": {
+    "right": {
         "speedA1": 0,
         "speedA2": 1,
         "speedB1": 1, 
         "speedB2": 0,
         "duration": 0.1},
-    "right": {
+    "left": {
         "speedA1": 1,
         "speedA2": 0,
         "speedB1": 0, 
         "speedB2": 1,
         "duration": 0.1},
-    "forward": {
+    "back": {
         "speedA1": 0,
         "speedA2": 1,
         "speedB1": 0, 
