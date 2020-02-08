@@ -8,7 +8,8 @@ from .car import Car
 # filename of the model that is placed in /opt/aiy/models
 MODEL_NAME = 'car.binaryproto'
 
-labels = ['forward', 'left', 'right']
+"""Estos labels tienen que venir en el mismo orden que el doc de labels del retrained graph"""
+labels = ['back', 'forward', 'left', 'right']
 
 class Model:
     model = None
