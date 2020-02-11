@@ -33,7 +33,7 @@ document.onkeydown = (e) => {
     37: 'left',
     38: 'forward',
     39: 'right',
-    40: 'back',
+    40: 'stop',
   }
 
   const direction = directions[e.keyCode]
