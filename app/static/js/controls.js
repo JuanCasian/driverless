@@ -9,8 +9,6 @@ function drive(direction, foldername, label) {
     data.label = label
   }
 
-  console.log('data', data)
-
   fetch(url, {
     method: 'POST',
     body: JSON.stringify(data),
