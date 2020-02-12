@@ -27,7 +27,6 @@ function drive(direction, foldername, label) {
 
 document.onkeydown = (e) => {
   e = e || window.event
-
   const directions = {
     32: 'stop',
     37: 'left',
@@ -44,9 +43,9 @@ document.onkeydown = (e) => {
     if (document.getElementById('button-folder').getAttribute('aria-pressed') === 'true') {
       foldername = document.getElementById('foldername').value
     }
-    if (document.getElementById('button-label').getAttribute('aria-pressed') === 'true') {
-      label = document.getElementById('labelname').value
-    }
+//    if (document.getElementById('button-label').getAttribute('aria-pressed') === 'true') {
+//      label = document.getElementById('labelname').value
+//    }
     drive(direction, foldername, label)
   }
 }
